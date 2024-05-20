@@ -5,3 +5,5 @@ def ePar(numero):
         print("{} é impar".format(numero))
 if __name__ ==" __main__":
     ePar(int(input("qual é o numero: ")))
+    git config --global user.name "DiegoAlves1984"
+git config --global user.email diegoauves@hotmail.com
