@@ -1,7 +1,16 @@
-with open("C:\\Users\\PC\\Documents\\dica linux.rtf", "r") as aula1:
-    conteudo = aula1.read()
+def criarArquivo(texto):
+    try:
+        with open("arquivo.txt", "r+") as arquivo:
+            conteudo = arquivo.readlines()
+            conteudo.append(texto + "\n")
+            arquivo.close()
+        arquivo = open("arquivo.txt", "w")
+        arquivo.writelines(conteudo)
+        arquivo.close()               
+    except Exception as e:
+        print("falha ao abrir o arquivo: {}".format(e))
 
-print(conteudo)
-
-
-'''trazer um arquivo de qualquer pasta do PC'''
+if __name__ == "__name__":
+    texto = input("O que deseja gravar? ")
+    criarArquivo(texto)
+    
