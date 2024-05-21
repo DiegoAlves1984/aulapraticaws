@@ -1,10 +1,10 @@
 def criarArquivo(texto):
     try:
-        with open("arquivo.txt", "r+") as arquivo:
+        with open("mercado.txt", "r+") as arquivo:
             conteudo = arquivo.readlines()
             conteudo.append(texto + "\n")
             arquivo.close()
-        arquivo = open("arquivo.txt", "w")
+        arquivo = open("mercado.txt", "w")
         arquivo.writelines(conteudo)
         arquivo.close()               
     except Exception as e:
