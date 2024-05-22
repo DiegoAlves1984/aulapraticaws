@@ -10,6 +10,12 @@ def criarArquivo(texto):
     except Exception as e:
         print("falha ao abrir o arquivo: {}".format(e))
 
+
+def lerArquivo():
+    conteudo = open("mercado.txt", "r")
+    print(conteudo.read())
+    conteudo.close
+
 if __name__ == "__name__":
     texto = input("O que deseja gravar? ")
     criarArquivo(texto)

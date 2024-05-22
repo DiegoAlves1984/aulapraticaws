@@ -9,12 +9,12 @@ while sair == False:
                   "3:Sair\n")
     if opcao == "1":
         item = input("Digite o item a ser adicionado: ")
-        arquivo.criarArquivo(item)
+        arquivo .criarArquivo(item)
     elif opcao == "2":
-        print("Falta implementar")
+        arquivo.lerArquivo()
     elif opcao == "3":
         sair = True
     else:
         print("Opção inválida")
-    os.system('cls')
+    #os.system('cls')
         
