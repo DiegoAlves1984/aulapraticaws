@@ -10,4 +10,4 @@ CREATE TABLE Loyalty
 );
 
 INSERT INTO Loyalty
-(1, "Alves", "Diego", "00001", "83999277456", "diegoalves@hotmail.com", "10000")
+values (1, "Alves", "Diego", "00001", "83999277456", "diegoalves@hotmail.com", 10000)""
